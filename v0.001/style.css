@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    --search-background-color:#303134;
+    --font-color-defalt:white;
+}
+body{
+    background-color: #202124;
+    color: var(--font-color-defalt);
+}
+#bodysub{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}  
+.bodySub-bg-top{
+    position: absolute;
+    width: 100%;
+    height: 80px; 
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+}
+.bodySub-bg-top-h2{
+    position: absolute;
+    left: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#image-bodySub-bg-top-tilt{
+    position: absolute;
+    left: 15px;
+    width: 25px;
+}
+#image-bodySub-bg-top-tilt0{
+    position: absolute;
+    right: 15px;
+    width: 25px;
+} 
+.top-body-cont-445{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+    background-color:var(--search-background-color);
+    border-radius: 5px;
+    box-shadow: 0 15px 20px 5px rgba(0, 0, 0, 0.11);
+    /* transition: all .5s; */
+}
+.top-body-cont-445 input{
+    position: relative;
+    top: 0;
+    width: 97%;
+    border: none;
+    padding-left: 3%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: large;
+    background-color: var(--search-background-color);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: var(--font-color-defalt);
+    border-left: 1px solid white;
+}
+.top-body-cont-445 input::placeholder{
+    color: rgb(173, 173, 173);
+}
+.top-body-44-search-results{
+    width: 100%;
+    position: relative;
+    top: 5px;
+    max-height: 450px;
+    background-color: var(--search-background-color);
+    border-radius: 5px;
+    overflow-X: hidden;
+}
+#top-body-44-search-results-ul{
+    width: 100%;
+    position: relative;    
+}
+#top-body-44-search-results-ul li{
+    width: 96%;
+    position: relative;
+    left: 2%;
+    height: 100px;
+    margin-top: 15px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 5px;
+    list-style: none;
+}
+#top-body-44-search-results-ul li.end{
+    background-color: transparent;
+    height: 5px;
+}
+
