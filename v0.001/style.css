@@ -7,6 +7,7 @@
     user-select: none;
     --search-background-color:#303134;
     --font-color-defalt:white;
+    --action-popup-bg:#313336;
 }
 body{
     background-color: #202124;
@@ -18,6 +19,10 @@ body{
     left: 0;
     width: 100%;
 }  
+.footer{
+    width: 100%;
+    height: 250px;
+}
 .bodySub-bg-top{
     position: absolute;
     width: 100%;
@@ -44,14 +49,14 @@ body{
     width: 25px;
 } 
 .top-body-cont-445{
-    width: 90%;
+    width: 92%;
     position: absolute;
-    left: 5%;
+    left: 4%;
     top: 100px;
     background-color:var(--search-background-color);
     border-radius: 5px;
     box-shadow: 0 15px 20px 5px rgba(0, 0, 0, 0.11);
-    /* transition: all .5s; */
+    z-index: 10;
 }
 .top-body-cont-445 input{
     position: relative;
@@ -80,6 +85,7 @@ body{
     overflow-X: hidden;
 }
 #top-body-44-search-results-ul{
+    display: none;
     width: 100%;
     position: relative;    
 }
@@ -97,4 +103,67 @@ body{
     background-color: transparent;
     height: 5px;
 }
+.top-body-cont-255{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: 200px;
+    height: 300px;
+    background-color: var(--search-background-color);
+    border-radius: 5px;
+    box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 0.13);
+}
 
+.top-body-cont-456{
+    position: relative;
+    margin-top: 250px;
+    width: 100%;
+}
+#top-body-cont-456-ul{
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+#top-body-cont-456-ul li{
+    list-style: none;
+    width: 100%;
+    height: 200px;
+    background-color: var(--action-popup-bg);
+    margin-top: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0px 20px 5px rgba(0, 0, 0, 0.103);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#top-body-cont-456-ul li img.go{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    filter: invert(100%);
+}
+.top-body-456-selector{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: 45px;
+    border-radius: 5px;
+    /* background-color: #ffffff; */
+}
+#top-body-456-selector-ul{
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    transition: all 1s;
+}
+#top-body-456-selector-ul li{
+    list-style: none;
+    height: 100%;
+    text-align: center;
+}
+#top-body-456-selector-ul li.on{
+    border-bottom: 3px solid gray;
+}

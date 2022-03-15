@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJEECT-REMINZ</title>
+    <title>PROJECT-REMINZ</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="appMain.init()">
 <div id="bodySub">
     
     <div class="bodySub-bg-top">
         <img id="image-bodySub-bg-top-tilt" src="icons/06.svg">
         <img id="image-bodySub-bg-top-tilt0" src="icons/11.svg">
-        <h2>PROJEECT-REMINZ</h2>
+        <h2>PROJECT-REMINZ</h2>
     </div>
 
-    <div class="top-body-cont-445" onfocusout="appMain.search.exit()">
-       <input type="text" placeholder="search" 
-             onfocus="appMain.search.init()" 
-             onkeyup="appMain.search.find(this.value)"
-        >
+    <div class="top-body-cont-445" id="top-body-cont-445">
+       <input type="text" placeholder="search" id="top-body-cont-445-input">
        <div class="top-body-44-search-results">
            <ul id="top-body-44-search-results-ul">
-               <li></li>
                <li></li>
                <li></li>
                <li></li>
@@ -34,6 +30,30 @@
        </div>
     </div>
 
+    <div class="top-body-cont-255">
+
+    </div>
+
+    <div class="top-body-cont-456">
+        <div class="top-body-456-selector">
+            <ul id="top-body-456-selector-ul">
+                <li class="on">Top #5</li>
+                <li>Explore</li>
+                <li>Profile</li>
+            </ul>
+        </div>
+        <ul id="top-body-cont-456-ul">
+            <li><span>PROJECT-REMINZ</span><img src="icons/07.svg" class="go"></li>
+            <li><span>PROJECT-REMINZ</span><img src="icons/07.svg" class="go"></li>
+            <li><span>PROJECT-REMINZ</span><img src="icons/07.svg" class="go"></li>
+            <li><span>PROJECT-REMINZ</span><img src="icons/07.svg" class="go"></li>
+            <li><span>PROJECT-REMINZ</span><img src="icons/07.svg" class="go"></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        
+    </div>
 
 </div>
 <script src="java.js"></script>
