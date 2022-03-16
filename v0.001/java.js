@@ -26,6 +26,39 @@ const appMain = {
             console.log("target : "+a);
         }
     },
+    action:{
+        C:function(a){ //[a,b,c,d,e]
+        var body = document.querySelector("body");
+
+        if(a=="a"){ // explore
+            this.on(1);
+        }
+        if(a=="b"){ // tools
+            this.on(2);
+        }
+        if(a=="c"){ // games
+            this.on(3);
+        }
+        if(a=="d"){ // projects
+            this.on(4);
+        }
+        if(a=="e"){ // settings
+            this.on(5);
+        }
+        },
+        on:function(a){// [1 to 5]
+            var obj = ["explore","tools","games","projects","settings"];
+            for(let i=0; i<5; i++){
+                if(i==(a-1)){
+                    document.getElementById("top-body-456-selector-"+obj[i])
+                    .setAttribute("class","on");
+                }else{
+                    document.getElementById("top-body-456-selector-"+obj[i])
+                    .setAttribute("class","off");
+                }
+            }
+        }
+    },
     init:function(){
         this.search.disp();
     }
