@@ -30,25 +30,22 @@ const appMain = {
         C:function(a){ //[a,b,c,d,e]
         var body = document.querySelector("body");
 
-        if(a=="a"){ // explore
+        if(a=="a"){ // home
             this.on(1);
         }
-        if(a=="b"){ // tools
+        if(a=="b"){ // explore
             this.on(2);
         }
-        if(a=="c"){ // games
+        if(a=="c"){ // saved
             this.on(3);
         }
-        if(a=="d"){ // projects
+        if(a=="d"){ // settings
             this.on(4);
-        }
-        if(a=="e"){ // settings
-            this.on(5);
         }
         },
         on:function(a){// [1 to 5]
-            var obj = ["explore","tools","games","projects","settings"];
-            for(let i=0; i<5; i++){
+            var obj = ["home","explore","saved","settings"];
+            for(let i=0; i<4; i++){
                 if(i==(a-1)){
                     document.getElementById("top-body-456-selector-"+obj[i])
                     .setAttribute("class","on");
@@ -59,7 +56,20 @@ const appMain = {
             }
         }
     },
+    disp:function(a){// work stopped here !-----------------------------------------------------------------!
+        var obj = ["home","explore","saved","settings"];
+        for(let i=0; i<4; i++){
+            if(i==(a-1)){
+                document.getElementById("bodySub-"+obj[i])
+                .setAttribute("class","on");
+            }else{
+                document.getElementById("bodySub-"+obj[i])
+                .setAttribute("class","off");
+            }
+        }
+    },
     init:function(){
         this.search.disp();
+        stop();
     }
 }
